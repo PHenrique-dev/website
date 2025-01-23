@@ -1,0 +1,31 @@
+.menu ul{
+    align-items: center;
+    justify-content: center;
+}
+.menu .nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #586875;
+    font-size: 20px;
+    font-weight: 500;
+    background: #a5c8ca;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+.menu .nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.menu .nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    margin: 5px;
+    background: #404950;
+}
