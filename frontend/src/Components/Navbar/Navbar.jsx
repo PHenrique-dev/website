@@ -4,8 +4,11 @@ import logo from '../Assets/435762163_2822109891280408_7450111231118052636_n-rem
 import { FaRegUserCircle } from "react-icons/fa";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
+  
   return (
     <div className='navbar'>
         <div className="nav-logo">
@@ -20,8 +23,8 @@ const Navbar = () => {
               </div>
       <div className="nav-login-cart">
       <FaRegUserCircle className='lgn'/>
-        <button>Login</button>
-        <MdOutlineShoppingCart className='cart'/>
+        <Link to='/login'><button>Login</button></Link>
+        <Link to='/cart'><MdOutlineShoppingCart className='cart'/></Link>
         <div className="nav-cart-count">0</div>
       </div>
     </div>
