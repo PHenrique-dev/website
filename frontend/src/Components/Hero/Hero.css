@@ -1,8 +1,13 @@
 .hero{
     height: 100vh;
-    background: #586875;
     display: flex;
-}
+    margin-top: 30px;
+    background-image: url('../Assets/Design sem nome (3).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 46px;
+}    
 .hero-left{
     flex: 1;
     display: flex;
@@ -17,8 +22,31 @@
     font-size: 26px;
     font-weight: 1000;
 }
-.hero-left p{
+.hero-left-p {
     color: #171717;
-    font-size: 50px;
+    font-size: 80px;
     font-weight: 700;
+}
+.hand-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hand-hand-icon img{
+    width: 105px;
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background-color: #586875;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
 }

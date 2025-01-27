@@ -1,3 +1,6 @@
+.menu{
+    height: 5px;
+}
 .menu ul{
     align-items: center;
     justify-content: center;
