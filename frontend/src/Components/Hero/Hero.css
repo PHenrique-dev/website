@@ -23,7 +23,12 @@
     font-weight: 1000;
 }
 .hero-left-p {
-    color: #171717;
+    color: #ffffff;
+    text-shadow: 
+    -1px -1px 0 black, 
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black; 
     font-size: 80px;
     font-weight: 700;
 }

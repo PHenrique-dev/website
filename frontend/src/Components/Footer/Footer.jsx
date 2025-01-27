@@ -16,6 +16,7 @@ const Footer = () => {
         <li>Produtos</li>
         <li>Escritorios</li>
         <li>Sobre</li>
+        <li>Contato</li>
       </ul>
       <div className="footer-social-icon">
       <a href="https://www.instagram.com/cade_bebe.iga/" target="_blank" rel="noopener noreferrer"><InstagramIcon /> </a>
