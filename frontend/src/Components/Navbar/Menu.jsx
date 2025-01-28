@@ -10,10 +10,10 @@ const Menu = () => {
   return (
     <div className='menu'>
       <ul className="nav-menu">
-        <li onClick={()=> {setMenu("home")}}><Link style={{textDecoration: 'none'}} to='/'>Home</Link>{menu==="home"?<hr/>:<></>}</li>
-        <li onClick={()=> {setMenu("catalogo")}}><Link style={{textDecoration: 'none'}} to='/catalogo'>Catalogo</Link>{menu==="catalogo"?<hr/>:<></>}</li>
-        <li onClick={()=> {setMenu("mens")}}><Link style={{textDecoration: 'none'}} to='/mens'>Masculino</Link>{menu==="mens"?<hr/>:<></>}</li>
-        <li onClick={()=> {setMenu("womens")}}><Link style={{textDecoration: 'none'}} to='/womens'>Feminino</Link>{menu==="womens"?<hr/>:<></>}</li>
+        <li onClick={()=> {setMenu("home")}}><Link style={{textDecoration: 'none', color: '#404950'}} to='/'>Home</Link>{menu==="home"?<hr/>:<></>}</li>
+        <li onClick={()=> {setMenu("catalogo")}}><Link style={{textDecoration: 'none', color: '#404950'}} to='/catalogo'>Catalogo</Link>{menu==="catalogo"?<hr/>:<></>}</li>
+        <li onClick={()=> {setMenu("mens")}}><Link style={{textDecoration: 'none', color: '#404950'}} to='/mens'>Masculino</Link>{menu==="mens"?<hr/>:<></>}</li>
+        <li onClick={()=> {setMenu("womens")}}><Link style={{textDecoration: 'none', color: '#404950'}} to='/womens'>Feminino</Link>{menu==="womens"?<hr/>:<></>}</li>
       </ul>
     </div>
   )

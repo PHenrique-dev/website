@@ -8,6 +8,7 @@ import CatalogoCategory from './Pages/CatalogoCategory'
 import Catalogo from './Pages/CatalogoCategory'
 import Cart from './Pages/Cart'
 import LoginSignup from './Pages/Cart'
+import Footer from './Components/Footer/Footer'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<LoginSignup/>}/>
       </Routes>
+      <Footer />
       </BrowserRouter>
     </div>
   )
