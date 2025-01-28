@@ -3,6 +3,8 @@
 }
 .item p{
     margin: 6px 0px;
+    font-size: 25px;
+    font-weight: 500;
 }
 .item-price{
     display: flex;
@@ -10,7 +12,7 @@
 }
 .item-price-new{
     color: black;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 600;
 }
 .item:hover{
