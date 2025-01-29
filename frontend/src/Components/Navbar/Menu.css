@@ -34,3 +34,21 @@
     margin: 5px;
     background: #404950;
 }
+.user_profile{
+    display: flex;
+}
+.user_profile .icon{
+    padding: 8px 8px 0px 8px;
+    border-radius: 10px;
+    margin-left: 25px;
+    background: white;
+    color: #586875;
+    font-size: 25px;
+    margin-top: -47px;
+    align-items: center;
+}
+.user_profile h2{
+    color:#586875;
+    margin-top: -40px;
+    margin-left: 15px;
+}

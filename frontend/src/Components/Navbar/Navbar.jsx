@@ -5,9 +5,10 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
-
+  const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
   
   return (
     <div className='navbar'>
@@ -21,9 +22,18 @@ const Navbar = () => {
               placeholder="O que você deseja?"></input>
               <button><BiSearchAlt2/></button>
               </div>
+              <FaRegUserCircle className='lgn'/>
+              {
+                isAuthenticated ?
+                <div className='btn'>
+                <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</button>
+                </div>
+                :
+                <div className='btn'>
+                <button onClick={() => loginWithRedirect()}>Login</button>
+                </div>
+              }
       <div className="nav-login-cart">
-      <FaRegUserCircle className='lgn'/>
-        <Link to='/login'><button>Login</button></Link>
         <Link to='/cart'><MdOutlineShoppingCart className='cart'/></Link>
         <div className="nav-cart-count">0</div>
       </div>

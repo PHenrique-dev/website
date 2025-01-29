@@ -54,10 +54,10 @@
     align-items: center;
     cursor: pointer;
 }
-.nav-login-cart .lgn{
+.lgn{
     width: 100px;
     height: 40px;
-    margin-right: -28px;
+    margin-right: -122px;
     color: #586875;
 }
 .nav-login-cart .cart{
@@ -65,7 +65,7 @@
     height: 40px;
     color: #586875;
 }
-.nav-login-cart button{
+.btn button{
     margin-right: 20px;
     width: 100px;
     height: 40px;
@@ -77,7 +77,7 @@
     font-weight: 500;
     cursor: pointer;
 }
-.nav-login-cart button:active{
+.btn button:active{
     background: white;
 }
 .nav-cart-count{
