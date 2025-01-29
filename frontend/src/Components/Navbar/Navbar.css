@@ -20,10 +20,15 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    width: 650px;
+    width: 850px;
     height: 25px;
     border: 1px solid #404950;
     background: #586875;
+}
+.navbar .search_box input::placeholder {
+    color: #A5C8CA;
+    font-style: italic;
+    opacity: 1;
 }
 .navbar .search_box button{
     padding: 10px 10px;
@@ -57,7 +62,7 @@
 .lgn{
     width: 100px;
     height: 40px;
-    margin-right: -122px;
+    margin-right: -100px;
     color: #586875;
 }
 .nav-login-cart .cart{
