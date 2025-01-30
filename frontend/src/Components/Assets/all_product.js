@@ -40,7 +40,7 @@ let all_product = [
     name: "Conjunto Feminino",
     category: "women",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 50.00,
   },
   {
     id: 2,
