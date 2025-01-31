@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Navbar.css'
 import logo from '../Assets/435762163_2822109891280408_7450111231118052636_n-removebg-preview.ico'
 import { FaRegUserCircle } from "react-icons/fa";
@@ -6,9 +6,11 @@ import { BiSearchAlt2 } from "react-icons/bi";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
+import { HomeContext } from '../../Context/HomeContext';
 
 const Navbar = () => {
   const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
+  const { getTotalCartItems } = useContext(HomeContext)
   
   return (
     <div className='navbar'>
@@ -35,7 +37,7 @@ const Navbar = () => {
               }
       <div className="nav-login-cart">
         <Link to='/cart'><MdOutlineShoppingCart className='cart'/></Link>
-        <div className="nav-cart-count">0</div>
+        <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
     </div>
     
