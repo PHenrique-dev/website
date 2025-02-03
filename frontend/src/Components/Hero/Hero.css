@@ -55,3 +55,15 @@
     font-weight: 500;
     cursor: pointer;
 }
+@media (max-width: 768px){
+    .hand-hand-icon img{
+        width: 100%;
+    }
+    .hero-left{
+        margin-left: 0px;
+        padding-left: 30px;
+    }
+    .hand-hand-icon img{
+        width: 100px;
+    }
+}

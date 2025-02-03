@@ -56,3 +56,84 @@
     font-size: 20px;
     font-weight: 700;
 }
+/* Ajuste para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .catalogo-products img {
+        width: 150px; /* Ajusta o tamanho da imagem */
+        height: 225px; /* Ajusta a altura da imagem */
+        border: 1px solid #ccc; /* Ajusta a borda */
+    }
+
+    .catalogo h1 {
+        font-size: 35px; /* Reduz o tamanho do título */
+        margin-top: 50px;
+        margin-left: 20px; /* Ajusta a margem */
+    }
+
+    .catalogo hr {
+        width: 150px; /* Ajusta o comprimento da linha */
+        margin-left: 20px;
+    }
+
+    .catalogo-indexSort {
+        margin: 50px 20px; /* Ajusta a margem lateral */
+        flex-direction: column; /* Alinha os itens em coluna */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    .catalogo-sort {
+        width: 21%; /* Faz o seletor de ordenação ocupar toda a largura */
+        margin-bottom: 10px; /* Dá espaçamento entre os itens */
+    }
+
+    .catalogo-indexSort p span {
+        font-size: 18px; /* Ajusta o tamanho da fonte */
+    }
+
+    .catalogo-products {
+        margin: 20px; /* Ajusta a margem */
+        grid-template-columns: 1fr 1fr; /* Exibe os produtos em 2 colunas */
+        row-gap: 40px; /* Ajusta o espaçamento entre as linhas */
+    }
+
+    .catalogo-loadmore {
+        width: 200px; /* Ajusta a largura do botão */
+        height: 60px; /* Ajusta a altura do botão */
+    }
+}
+
+/* Ajuste para telas extras pequenas (ex: smartphones em retrato) */
+@media (max-width: 480px) {
+    .catalogo-products img {
+        width: 120px; /* Reduz mais o tamanho da imagem */
+        height: 180px; /* Ajusta a altura da imagem */
+    }
+
+    .catalogo h1 {
+        font-size: 28px; /* Reduz ainda mais o tamanho do título */
+        margin-left: 10px; /* Ajusta a margem */
+    }
+
+    .catalogo hr {
+        width: 120px; /* Ajusta a largura da linha */
+        margin-left: 10px;
+    }
+
+    .catalogo-indexSort {
+        margin: 30px 10px; /* Ajusta a margem */
+        flex-direction: column; /* Empilha os itens na vertical */
+        align-items: flex-start;
+    }
+
+    .catalogo-products {
+        margin: 10px; /* Ajusta a margem */
+        grid-template-columns: 1fr; /* Exibe os produtos em uma única coluna */
+        row-gap: 20px; /* Ajusta o espaçamento */
+    }
+
+    .catalogo-loadmore {
+        width: 180px; /* Reduz a largura do botão */
+        height: 50px; /* Reduz a altura do botão */
+    }
+}
+

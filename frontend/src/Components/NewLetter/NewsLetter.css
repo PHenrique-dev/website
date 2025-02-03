@@ -48,3 +48,72 @@
     font-size: 16px;
     cursor: pointer;
 }
+/* Ajuste para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .newletter {
+        width: 80%; /* Aumenta a largura para aproveitar mais a tela */
+        height: auto; /* Remove a altura fixa */
+        padding: 0px 30px; /* Ajusta o padding */
+        margin-bottom: 80px; /* Diminui a margem inferior */
+    }
+
+    .newletter h1 {
+        font-size: 40px; /* Reduz o tamanho do título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .newletter p {
+        font-size: 18px; /* Ajusta o tamanho da fonte do parágrafo */
+        text-align: center; /* Centraliza o parágrafo */
+    }
+
+    .newletter div {
+        width: 100%; /* Faz o input ocupar toda a largura disponível */
+        margin: 0; /* Remove a margem */
+        justify-content: space-between;
+        padding: 0 10px; /* Ajusta o espaçamento interno */
+    }
+
+    .newletter input {
+        width: 75%; /* Ajusta o tamanho do input */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    .newletter div button {
+        width: 40%; /* Reduz a largura do botão */
+        font-size: 14px; /* Ajusta o tamanho da fonte do botão */
+    }
+}
+
+/* Ajuste para telas extras pequenas (ex: smartphones em retrato) */
+@media (max-width: 480px) {
+    .newletter {
+        width: 95%; /* Ajusta a largura para telas muito pequenas */
+        padding: 0px 20px; /* Ajusta o padding para telas menores */
+    }
+
+    .newletter h1 {
+        font-size: 30px; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .newletter p {
+        font-size: 16px; /* Ajusta o tamanho do parágrafo */
+    }
+
+    .newletter div {
+        flex-direction: column; /* Organiza os elementos em coluna */
+        width: 100%; /* Ajusta a largura do container */
+        height: auto; /* Remove a altura fixa */
+        justify-content: center; /* Centraliza os elementos */
+    }
+
+    .newletter input {
+        width: 100%; /* Faz o input ocupar toda a largura */
+        margin-left: 0; /* Remove a margem à esquerda */
+    }
+
+    .newletter div button {
+        width: 100%; /* Faz o botão ocupar toda a largura */
+        margin-top: 10px; /* Adiciona um espaçamento entre o input e o botão */
+    }
+}

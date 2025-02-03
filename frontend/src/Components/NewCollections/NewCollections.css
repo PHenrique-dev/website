@@ -27,3 +27,54 @@
     height: 300px;
     cursor: pointer;
 }
+/* Ajuste para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .new-collections {
+        margin-bottom: 50px; /* Ajusta a margem inferior */
+    }
+
+    .new-collections h1 {
+        font-size: 35px; /* Reduz o tamanho do título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .new-collections hr {
+        width: 250px; /* Ajusta a largura da linha */
+        margin: 10px 0; /* Dá um pouco de espaço ao redor da linha */
+    }
+
+    .collections {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
+        gap: 20px; /* Reduz o espaço entre as imagens */
+    }
+    .new-collections .collections p{
+        font-size: 17px;
+    }
+
+    .new-collections .collections img {
+        width: 150px; /* Reduz a largura das imagens */
+        height: 225px; /* Ajusta a altura das imagens */
+    }
+}
+
+/* Ajuste para telas extras pequenas (ex: smartphones em retrato) */
+@media (max-width: 480px) {
+    .new-collections h1 {
+        font-size: 28px; /* Reduz o tamanho do título ainda mais */
+    }
+
+    .new-collections hr {
+        width: 150px; /* Ajusta a largura da linha */
+    }
+
+    .collections {
+        grid-template-columns: 1fr; /* Uma coluna para telas muito pequenas */
+        gap: 15px; /* Ajusta o espaçamento */
+    }
+
+    .new-collections .collections img {
+        width: 120px; /* Ajusta o tamanho das imagens */
+        height: 180px; /* Ajusta a altura das imagens */
+    }
+}

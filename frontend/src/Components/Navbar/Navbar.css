@@ -99,3 +99,82 @@
     background: #A5C8CA;
     color: white;
 }
+/* Ajuste para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        height: auto; /* Deixa a altura mais flexível */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .nav-logo img {
+        width: 0px; /* Reduz o tamanho do logo */
+    }
+
+    .navbar .search_box input {
+        width: 100%; /* Faz o campo de pesquisa ocupar toda a largura */
+        height: 20px; /* Ajusta a altura do campo de busca */
+    }
+
+    .navbar .search_box button {
+        width: 40px; /* Ajusta a largura do botão de busca */
+        height: 40px; /* Ajusta a altura do botão de busca */
+    }
+
+    .navbar .search_box {
+        width: 80%; /* Garante que a caixa de pesquisa ocupe toda a largura disponível */
+        display: flex;
+    }
+
+    .nav-login-cart {
+        margin-top: 10px;
+        justify-content: center; /* Centraliza os itens */
+    }
+
+    .nav-login-cart .lgn, .nav-login-cart .cart {
+        width: auto; /* Deixa os botões mais compactos */
+    }
+
+    .btn button {
+        width: 100%; /* Botões mais largos e fáceis de clicar */
+        margin-right: 0;
+    }
+
+    .nav-cart-count {
+        margin-top: -25px;
+        margin-left: -20px;
+    }
+}
+
+/* Ajuste para telas extras pequenas (ex: smartphones em retrato) */
+@media (max-width: 480px) {
+    .navbar .search_box input {
+        width: 70%; /* Campo de busca ocupa toda a largura da tela */
+    }
+
+    .navbar .search_box button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar {
+        padding: 8px;
+    }
+
+    .nav-login-cart {
+        flex-direction: column; /* Coloca os itens em coluna */
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-login-cart .lgn, .nav-login-cart .cart {
+        width: 100%; /* Alinha os botões verticalmente */
+        text-align: center;
+    }
+
+    .nav-cart-count {
+        margin-top: -15px;
+        margin-left: -10px;
+    }
+}

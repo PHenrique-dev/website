@@ -27,3 +27,59 @@
     height: 300px;
     cursor: pointer;
 }
+/* Ajuste para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .popular {
+        height: auto; /* Remove a altura fixa */
+        margin-top: 20px; /* Ajusta a margem superior */
+    }
+
+    .popular h1 {
+        font-size: 35px; /* Reduz o tamanho do título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .popular hr {
+        width: 150px; /* Ajusta a largura da linha */
+        margin: 10px 0; /* Dá um pouco de espaço ao redor da linha */
+    }
+
+    .popular-item {
+        display: grid; /* Usa grid para exibir as imagens em duas colunas */
+        grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
+        gap: 25px; /* Espaçamento entre as imagens */
+        margin-top: 20px;
+        justify-items: center;
+        margin-bottom: 20px;
+    }
+
+    .popular .popular-item img {
+        width: 150px; /* Reduz a largura das imagens */
+        height: 225px; /* Ajusta a altura das imagens */
+    }
+    .popular .popular-item p{
+        font-size: 16px;
+    }
+}
+
+/* Ajuste para telas extras pequenas (ex: smartphones em retrato) */
+@media (max-width: 480px) {
+    .popular h1 {
+        font-size: 28px; /* Reduz ainda mais o tamanho do título */
+        margin-left: 10px; /* Ajusta a margem */
+    }
+
+    .popular hr {
+        width: 120px; /* Ajusta a largura da linha para telas pequenas */
+    }
+
+    .popular-item {
+        margin-top: 15px; /* Ajusta a margem superior */
+        margin-left: 0; /* Remove a margem à esquerda */
+    }
+
+    .popular .popular-item img {
+        width: 120px; /* Imagem ainda menor */
+        height: 180px; /* Ajusta a altura da imagem */
+    }
+}

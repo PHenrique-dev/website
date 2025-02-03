@@ -43,3 +43,61 @@
     font-size: 20px;
     font-weight: 700;
 }
+/* Ajuste para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .catalogo-category .catacategory-products img {
+        width: 150px; /* Reduz o tamanho da imagem */
+        height: 200px; /* Reduz a altura da imagem */
+        border: 1px solid #ccc; /* Ajusta a borda da imagem */
+    }
+
+    .catacategory-banner {
+        width: 95%; /* Ajusta o banner para ocupar quase toda a largura da tela */
+    }
+
+    .catacategory-indexSort {
+        margin: 0 10px; /* Reduz o espaçamento lateral */
+        flex-direction: column; /* Empilha os itens na vertical */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .catacategory-products {
+        margin: 20px; /* Ajusta a margem */
+        grid-template-columns: 1fr 1fr; /* Reduz o número de colunas */
+        row-gap: 40px; /* Ajusta o espaçamento entre as linhas */
+    }
+
+    .catacategory-loadmore {
+        width: 200px; /* Ajusta a largura do botão */
+        height: 60px; /* Ajusta a altura do botão */
+    }
+}
+
+/* Ajuste para telas extras pequenas (ex: smartphones em retrato) */
+@media (max-width: 480px) {
+    .catalogo-category .catacategory-products img {
+        width: 120px; /* Imagem menor */
+        height: 180px; /* Altura ajustada */
+    }
+
+    .catacategory-banner {
+        width: 100%; /* Garante que o banner ocupe toda a largura */
+    }
+
+    .catacategory-indexSort {
+        margin: 0 5px; /* Reduz ainda mais a margem lateral */
+        flex-direction: column; /* Empilha ainda mais os itens */
+        align-items: flex-start;
+    }
+
+    .catacategory-products {
+        margin: 10px; /* Ajusta a margem */
+        grid-template-columns: 1fr; /* Exibe apenas uma coluna */
+        row-gap: 20px; /* Reduz o espaçamento */
+    }
+
+    .catacategory-loadmore {
+        width: 180px; /* Botão mais estreito */
+        height: 50px; /* Botão mais baixo */
+    }
+}

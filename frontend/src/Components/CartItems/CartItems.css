@@ -63,3 +63,72 @@
     font-weight: 600;
     cursor: pointer;
 }
+/* Ajuste para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .cartitems {
+        margin: 50px 20px; /* Diminui a margem nas laterais */
+    }
+
+    .cartitems-format-main, .cartitems-format {
+        font-size: 10px;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr; /* Ajusta o layout para telas menores */
+        gap: 0px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .cartitems-quantity {
+        width: 50px; /* Ajusta a largura do campo de quantidade */
+        height: 40px; /* Ajusta a altura do campo de quantidade */
+    }
+
+    .cartitems-total {
+        margin-right: 20px; /* Ajusta a margem à direita */
+        gap: 20px; /* Reduz o espaçamento entre os itens totais */
+    }
+
+    .cartitems-total button {
+        width: 100%; /* Faz o botão ocupar toda a largura disponível */
+        height: 50px; /* Ajusta a altura do botão */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    .cartitems-total-item {
+        font-size: 14px; /* Reduz o tamanho da fonte dos itens totais */
+    }
+
+    .cartitems-remove-icon {
+        width: 20px; /* Ajusta o tamanho do ícone de remover */
+        margin: 0 20px; /* Ajusta a margem do ícone */
+    }
+}
+
+/* Ajuste para telas extras pequenas (ex: smartphones em retrato) */
+@media (max-width: 480px) {
+    .cartitems {
+        margin: 30px 10px; /* Ajusta ainda mais as margens laterais */
+    }
+
+    .cartitems-format-main, .cartitems-format {
+        grid-template-columns: 1fr 2fr 1fr; /* Reduz ainda mais o número de colunas */
+        gap: 15px; /* Ajusta o espaçamento */
+    }
+
+    .cartitems-quantity {
+        width: 40px; /* Ajusta a largura do campo de quantidade */
+        height: 30px; /* Ajusta a altura */
+    }
+
+    .cartitems-total button {
+        width: 100%; /* Faz o botão ocupar toda a largura */
+        height: 40px; /* Ajusta a altura do botão */
+        font-size: 12px; /* Ajusta o tamanho da fonte */
+    }
+
+    .cartitems-total-item {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+    }
+
+    .cartitems-remove-icon {
+        width: 15px; /* Ajusta o ícone para telas muito pequenas */
+        margin: 0 10px; /* Ajusta a margem */
+    }
+}
