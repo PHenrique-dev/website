@@ -145,6 +145,9 @@
         margin-top: -25px;
         margin-left: -20px;
     }
+    .lgn{
+        display: none;
+    }
 }
 
 /* Ajuste para telas extras pequenas (ex: smartphones em retrato) */
@@ -176,5 +179,8 @@
     .nav-cart-count {
         margin-top: -15px;
         margin-left: -10px;
+    }
+    .lgn{
+        display: none;
     }
 }

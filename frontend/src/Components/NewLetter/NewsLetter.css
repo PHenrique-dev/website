@@ -88,8 +88,8 @@
 /* Ajuste para telas extras pequenas (ex: smartphones em retrato) */
 @media (max-width: 480px) {
     .newletter {
-        width: 95%; /* Ajusta a largura para telas muito pequenas */
-        padding: 0px 20px; /* Ajusta o padding para telas menores */
+        width: 85%; /* Ajusta a largura para telas muito pequenas */
+        padding: 10px 20px; /* Ajusta o padding para telas menores */
     }
 
     .newletter h1 {
@@ -101,8 +101,8 @@
     }
 
     .newletter div {
-        flex-direction: column; /* Organiza os elementos em coluna */
-        width: 100%; /* Ajusta a largura do container */
+        padding: 5px;
+        width: 90%; /* Ajusta a largura do container */
         height: auto; /* Remove a altura fixa */
         justify-content: center; /* Centraliza os elementos */
     }
@@ -110,10 +110,12 @@
     .newletter input {
         width: 100%; /* Faz o input ocupar toda a largura */
         margin-left: 0; /* Remove a margem à esquerda */
+        margin-bottom: 0px;
     }
 
     .newletter div button {
-        width: 100%; /* Faz o botão ocupar toda a largura */
-        margin-top: 10px; /* Adiciona um espaçamento entre o input e o botão */
+        width: 95px; /* Faz o botão ocupar toda a largura */
+        height: 45px;
+        font-size: 10px;
     }
 }

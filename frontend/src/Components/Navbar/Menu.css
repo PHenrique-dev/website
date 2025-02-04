@@ -56,4 +56,14 @@
     .user_profile h2{
         display: none;
     }
+    .menu .nav-menu li{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .user_profile .icon{
+        margin-left: 3px;
+        font-size: 15px;
+        padding: 3px 3px 3px 3px;
+        margin-top: -33px;
+    }
 }
